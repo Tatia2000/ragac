@@ -53,7 +53,7 @@ body {
   height: 7px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #ff4f5a;
+  background-color: #0F5798;
   border-radius: 15px;
 }
 
@@ -94,7 +94,7 @@ body {
 }
 
 .header_section {
-  background-color: #000000;
+  background-color: #105ca0;
   font-family: "Poppins", sans-serif;
 }
 
@@ -124,7 +124,7 @@ body {
   height: 4px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #ff4f5a;
+  background-color: #0F5798;
   border-radius: 5px;
 }
 
@@ -218,7 +218,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #ff4f5a;
+  color: #0F5798;
 }
 
 .slider_section .slider_nav-box {
@@ -340,11 +340,11 @@ a:focus {
 }
 
 .service_section .detail-box .btn-box a {
-  color: #ff4f5a;
+  color: #0F5798;
 }
 
 .service_section .detail-box .btn-box hr {
-  background-color: #ff4f5a;
+  background-color: #0F5798;
 }
 
 .service_section::before {
@@ -361,7 +361,7 @@ a:focus {
 }
 
 .work_section {
-  background-color: #ff4f5a;
+  background-color: #0F5798;
 }
 
 .work_section .custom_heading-container h3 {
@@ -527,17 +527,17 @@ a:focus {
 }
 
 .contact_section button {
-  background-color: #ff4f5a;
+  background-color: #0F5798;
   padding: 12px 55px;
   outline: none;
   border: none;
-  border: 1px solid #ff4f5a;
+  border: 1px solid #0F5798;
   color: #fff;
   margin-top: 25px;
 }
 
 .contact_section button:hover {
-  color: #ff4f5a;
+  color: #0F5798;
   background-color: transparent;
 }
 
@@ -587,11 +587,11 @@ a:focus {
 }
 
 .client_section .client_container .client_id .name h6 {
-  color: #ff4f5a;
+  color: #0F5798;
 }
 
 .info_section {
-  background-color: #ff4f5a;
+  background-color: #0F5798;
   color: #ffffff;
 }
 

@@ -5,21 +5,21 @@
         display: none;
     }
 
-    .service_section::before {
+    .product_section::before {
         bottom: 45px;
     }
 
-    .service_section .service_container {
+    .product_section .product_container {
         padding: 45px 0 125px 0;
     }
 
 
 
-    .service_section .box.b-2 .detail-box {
+    .product_section .box.b-2 .detail-box {
         width: auto;
     }
 
-    .service_section .box.b-3 .detail-box {
+    .product_section .box.b-3 .detail-box {
         width: auto;
     }
 
@@ -40,15 +40,15 @@
         margin-bottom: 35px;
     }
 
-    .service_section .box.b-1 .detail-box {
+    .product_section .box.b-1 .detail-box {
         text-align: left;
     }
 
-    .service_section .box.b-4 .detail-box {
+    .product_section .box.b-4 .detail-box {
         text-align: right;
     }
 
-    .service_section .box {
+    .product_section .box {
         margin: 25px 0;
     }
 

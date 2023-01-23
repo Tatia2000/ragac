@@ -282,72 +282,72 @@ a:focus {
   width: 350px;
 }
 
-.service_section {
+.product_section {
   text-align: center;
   position: relative;
 }
 
-.service_section .custom_heading-container {
+.product_section .custom_heading-container {
   margin-bottom: 15px;
 }
 
-.service_section .service_container {
+.product_section .product_container {
   padding: 45px 0 75px 0;
 }
 
-.service_section .box.b-2 .detail-box {
+.product_section .box.b-2 .detail-box {
   width: 60%;
   text-align: right;
   overflow: hidden;
 }
 
-.service_section .box.b-2 .detail-box p {
+.product_section .box.b-2 .detail-box p {
   height: 52px;
   overflow: hidden;
 }
 
-.service_section .box.b-2 .detail-box a {
+.product_section .box.b-2 .detail-box a {
   min-width: 100px;
 }
 
-.service_section .box.b-3 .detail-box {
+.product_section .box.b-3 .detail-box {
   width: 70%;
   margin-left: auto;
   overflow: hidden;
   text-align: left;
 }
 
-.service_section .box.b-3 .detail-box p {
+.product_section .box.b-3 .detail-box p {
   height: 52px;
   overflow: hidden;
 }
 
-.service_section .box.b-3 .detail-box a {
+.product_section .box.b-3 .detail-box a {
   min-width: 100px;
 }
 
-.service_section .img-box img {
+.product_section .img-box img {
   height: 200px;
 }
 
-.service_section .detail-box {
+.product_section .detail-box {
   height: 118px;
   margin-top: 10px;
 }
 
-.service_section .detail-box h6 {
+.product_section .detail-box h6 {
   font-weight: bold;
 }
 
-.service_section .detail-box .btn-box a {
+.product_section .detail-box .btn-box a {
   color: #0F5798;
 }
 
-.service_section .detail-box .btn-box hr {
+.product_section .detail-box .btn-box hr {
   background-color: #0F5798;
 }
 
-.service_section::before {
+.product_section::before {
   content: "";
   width: 200px;
   height: 175px;

@@ -7195,7 +7195,18 @@ button.close {
 .visible-print-inline-block {
     display: none !important
 }
-
+.justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+}
+.d-md-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+.d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
 @media print {
     .visible-print-inline-block {
         display: inline-block !important

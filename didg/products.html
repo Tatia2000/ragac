@@ -117,11 +117,11 @@
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="area-title text-center">
-                    <p><i class="arrow left" onclick="previous()"></i> Previous </p>
                     <h2>პროდუქცია</h2>
-
                 </div>
             </div>
+            <p id="previous" style="visibility: hidden; cursor: pointer;" onclick="previous()"><i class="arrow left" ></i> Previous </p>
+
             <div class="wrapper" id="main-products">
                 <div class="block">
                     <div class="card">
@@ -130,6 +130,15 @@
                         <div class="container">
                             <h4><b>ძრავი 1</b></h4>
                             <!--                            <p>Architect & Engineer</p>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/saba_only_logo.png" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b>John Doe</b></h4>
+                            <p>Architect & Engineer</p>
                         </div>
                     </div>
                 </div>
@@ -355,11 +364,24 @@
 <script>
     function choose_product(el) {
         // console.log(el)
-        document.getElementById("main-products").style.visibility = 'hidden';
-        document.getElementById("main-products").style.display = "none"
-        document.getElementById(el).style.visibility = "visible"
-        document.getElementById(el).style.display = "grid"
+        const mainProducts=document.getElementById("main-products");
+        let subEl=document.getElementById(el);
+        mainProducts.style.visibility = 'hidden';
+        mainProducts.style.display = "none"
+        subEl.style.visibility = "visible"
+        subEl.style.display = "grid"
+        document.getElementById("previous").style.visibility="visible"
         // document.getElementById("demo").style.color = "red";
+    };
+    function previous(){
+        const mainProducts=document.getElementById("main-products");
+        let subEl=document.getElementById("engine");
+        subEl.style.visibility = 'hidden';
+        subEl.style.display = "none"
+        mainProducts.style.visibility = "visible"
+        mainProducts.style.display = "grid"
+        document.getElementById("previous").style.visibility="hidden"
+
     }
 
 </script>

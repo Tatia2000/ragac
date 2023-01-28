@@ -2032,6 +2032,7 @@ ul.blog-instagram-feed-widget li {
 }
 
 .block {
+    cursor: pointer;
     /*background-color: red;*/
 }
 

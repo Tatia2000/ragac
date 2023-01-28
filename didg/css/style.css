@@ -80,7 +80,7 @@ font-family: "BPG Arial Caps", sans-serif;
 
 }
 .area-title h2::after {
-background : url("img/icons/red.png") center center /contain no-repeat scroll rgb(0, 0, 0, 0);
+background : url("/didg/img/icons/red.png") center center /contain no-repeat scroll rgb(0, 0, 0, 0);
 bottom : 0;
 content : "";
 height : 30px;
@@ -166,7 +166,7 @@ box-shadow : 0 0 4px rgb(0, 0, 0, 0.14), 0 4px 8px rgb(0, 0, 0, 0.28);
 z-index : 99999;
 }
 .mainmenu-area::after {
-background : url(img/icons/tri-promo-bottom-white.png) 0 0 repeat scroll transparent;
+background : url(/didg/img/icons/tri-promo-bottom-white.png) 0 0 repeat scroll transparent;
 bottom : -7px;
 content : "";
 height : 7px;
@@ -348,7 +348,7 @@ flex-direction : column;
 padding-top : 5%;
 }
 .pogoSlider-slide::after {
-background : url(img/pattarn.png) 0 0 repeat scroll #000;
+background : url(/didg/img/pattarn.png) 0 0 repeat scroll #000;
 content : "";
 height : 100%;
 left : 0;
@@ -1448,7 +1448,7 @@ border-bottom : 1px solid #d1d1d1;
 display : none;
 }
 .top-area-bg {
-background : url("img/slider/slide_1.jpg") center center /cover no-repeat scroll rgb(0, 0, 0, 0);
+background : url("didg/img/slider/slide_1.jpg") center center /cover no-repeat scroll rgb(0, 0, 0, 0);
 height : 100%;
 left : 0;
 position : absolute;
@@ -1457,7 +1457,7 @@ width : 100%;
 z-index : 2;
 }
 .top-area-bg::before {
-background : url(img/pattarn.png) 0 0 repeat scroll #000;
+background : url(/didg/img/pattarn.png) 0 0 repeat scroll #000;
 content : "";
 height : 100%;
 left : 0;
@@ -1608,7 +1608,7 @@ width : 100%;
 }
 .package-price {
 align-items : center;
-background : url("img/icons/tag.png") center center /cover no-repeat scroll rgb(0, 0, 0, 0);
+background : url("/didg/img/icons/tag.png") center center /cover no-repeat scroll rgb(0, 0, 0, 0);
 color : #fff;
 display : flex;
 font-family : pt sans narrow, sans-serif;

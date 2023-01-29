@@ -2017,14 +2017,15 @@ ul.blog-instagram-feed-widget li {
 
 
 .wrapper {
+    padding: 50px;
     display: grid;
     overflow-x:hidden;
-    grid-template-columns: repeat(5,20%);
+    grid-template-columns: repeat(5,18%);
     grid-auto-rows: 40vh;
     /*grid-auto-columns: 25vw;*/
     grid-gap: 10px;
-    height: 80%;
-    /*width: 100%;*/
+    height: 100%;
+    width: 100%;
     /*max-width: 100%;*/
 }
 
@@ -2037,6 +2038,9 @@ ul.blog-instagram-feed-widget li {
     cursor: pointer;
     /*background-color: red;*/
 }
+.card:hover {
+
+}
 
 card {
     /*transition: 0.3s;*/
@@ -2044,8 +2048,14 @@ card {
 }
 
 .card:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
+card-image:hover{
+
+}
 .container {
     padding: 2px 16px;
 }

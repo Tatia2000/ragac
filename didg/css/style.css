@@ -2018,7 +2018,7 @@ ul.blog-instagram-feed-widget li {
 
 .wrapper {
     display: grid;
-    overflow-y:hidden;
+    overflow-x:hidden;
     grid-template-columns: repeat(5,20%);
     grid-auto-rows: 40vh;
     /*grid-auto-columns: 25vw;*/
@@ -2060,4 +2060,18 @@ card {
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+.detail-container {
+    display: flex;
+    /*align-items: center;*/
+    align-items: start;
+    justify-content: center
+}
+
+
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
 }

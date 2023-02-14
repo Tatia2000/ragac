@@ -125,7 +125,10 @@
 <!--        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="area-title text-center">
+                <div style="margin: 10px ; align-items: center">
+                    <img src="" id="cover-image" width="100%" height="40%">
+                </div>
+                <div class="area-title text-center" >
                     <h2>პროდუქცია</h2>
                 </div>
             </div>
@@ -135,8 +138,8 @@
             <div class="wrapper" id="main-products">
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine"
-                             onclick="choose_product($(this).data('product'))">
+                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine" data-cover="/didg/img/engine_cover.png"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'))">
                         <div class="container">
                             <h4><b>ძრავები</b></h4>
                         </div>
@@ -776,7 +779,7 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
 </div>
 <script>
     let previousTab=null;
-    function choose_product(el) {
+    function choose_product(el,image) {
         // console.log(el)
         const me=this;
         const mainProducts = document.getElementById("main-products");
@@ -789,6 +792,10 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
         document.getElementById("previous").style.visibility = "visible"
         document.getElementById("mySidebar").style.height = "100%";
         previousTab=el;
+        debugger;
+        if(image){
+            document.getElementById("cover-image").src=image;
+        }
         // document.getElementById("demo").style.color = "red";
     };
 

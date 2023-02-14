@@ -2023,7 +2023,7 @@ ul.blog-instagram-feed-widget li {
     grid-template-columns: repeat(5,18%);
     grid-auto-rows: 40vh;
     /*grid-auto-columns: 25vw;*/
-    grid-gap: 10px;
+    grid-gap: calc(13px + 7%);
     height: 100%;
     width: 100%;
     /*max-width: 100%;*/

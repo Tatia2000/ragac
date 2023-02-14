@@ -2337,7 +2337,6 @@ card-image:hover {
     padding: 7px;
 }
 
-/* Clear floats after image containers */
 .row::after {
     content: "";
     clear: both;

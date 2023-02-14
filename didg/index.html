@@ -29,6 +29,38 @@
     <script src="js/vendor/modernizr-2.8.3.min.js" type="bb58a810c9ecfb613035d439-text/javascript"></script>
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+        #div1 {
+            position: relative;
+            box-sizing: border-box;
+            margin: auto;
+            height: 400px;
+            width: 500px;
+            padding: 15px;
+            border: 2px solid #e76f5a;
+            background-color: #ffffff;
+        }
+        #div2 {
+            padding: 40px;
+            box-sizing: border-box;
+            position: absolute;
+            border: 2px solid #e76f5a;
+            background-color: #ffffff;
+            aspect-ratio: 10/1;
+        }
+        .div-style {
+            background-color: #020202;
+            width: 500px;
+            height:350px;
+            border: 15px solid #ffffff;
+            padding: 0px;
+            margin: 150px;
+            margin-top: 10px;
+            aspect-ratio: 5/1;
+        }
+
+
+    </style>
 </head>
 <body>
 
@@ -144,8 +176,49 @@
 
 </header>
 
+<center>
+    <marquee  behavior="alternate" direction="left" >
+        <div class="row">
+            <div class="column" >
+                <img  src=
+                              "img/2.jpg"
+                      class="image_width">
+            </div>
+            <div class="column">
+                <img  src=
+                              "img/3.png"
+                      class="image_width">
+            </div>
+            <div class="column">
+                <img  src=
+                              "img/323.jpg"
+                      class="image_width">
+            </div>
+        </div>
+    </marquee>
 
-<section class="about-area section-padding" id="about">
+    <marquee  behavior="alternate" direction="right">
+        <div class="row">
+            <div class="column">
+                <img  src=
+                              "img/perkins_1.jpg"
+                      class="image_width">
+            </div>
+            <div class="column">
+                <img  src="img/WhatsApp%20Image%202023-01-31%20at%2016.18.23.jpg"
+                      alt="GeeksforGeeks logo" class="image_width">
+            </div>
+            <div class="column">
+                <img  src=
+                              "img/WhatsApp%20Image%202023-01-31%20at%2016.18.2323.jpg"
+                      alt="GeeksforGeeks logo" class="image_width">
+            </div>
+        </div>
+    </marquee>
+</center>
+
+<section class="about-area section-padding" id="about" style="background: rgb(246,231,197);
+background: linear-gradient(90deg, rgb(245,228,192) 0%, rgb(255,255,255) 35%, rgb(248,234,206) 100%);">
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -154,8 +227,8 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div class="about-content">
-                    <p><em>ჩვენ ვართ საინჟინრო/დისტრიბუტორი კომპანია, რომელიც მრავალი წელია ამიერკავკასიის ინდუსტრიულ
+                <div id="div1" class="about-content">
+                    <em>ჩვენ ვართ საინჟინრო/დისტრიბუტორი კომპანია, რომელიც მრავალი წელია ამიერკავკასიის ინდუსტრიულ
                         ბაზარზე სხვადახვა ტექნოლოგიების მომწოდებელია და
                         ფლობს ავტომატიზაციის სფეროში განხორციელებული პროექტების დიდ პორტფოლიოს.
                         ჩვენ ვემსახურებით 700- ზე მეტ კომპანიას, მათ შორის დიდ საკვანძო ინდუსტრიულ კომპანიებს.
@@ -164,24 +237,22 @@
                         დიდ არჩევანს: ძრავები, რედუქტორები, კომპრესორები,გენერატორები,მართვის სისტემებისთვის საჭირო
                         მოწყობილობები, მაღალტექნოლოგიური სენსორები და სხვა ინდუსტრიული დანადგარები.
                         </em>
+                    <div id="div2"> კომპანია საბა" გთავაზობთ პროექტირებას, სამონტაჟო მომსახურებასა და შემდგომ ტექნიკურ მხარდაჭერას
+                    ნებისმიერ ელექტრო საინსტალაციო სამუშაოებზე.</div>
 
-                    </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
                 <div class="right-about-content">
-                    <p><em>
-                        <strong><em>უპირატესობები: </em></strong> <br>
-                        <strong> ✓</strong> გამოცდილი გუნდი <br>
-                        <strong> ✓</strong> პროდუქციის ადგილზე ხელმისაწვდომობა <br>
-                        <strong> ✓</strong> ეფექტური ტექნიკური გადაწყვეტილებები <br>
-                        <strong> ✓</strong> უმაღლესი ხარისხის პროდუქცია<br>
-                        <strong> ✓</strong> შემდგომი ტექნიკური მხარდაჭერა<br>
-                        <strong> ✓</strong> ოფიციალური ტექნიკური გარანტია<br>
-                        <strong> ✓</strong> ხელმისაწვდომი ფასები<br>
-                        <br>
-                        კომპანია ,,საბა" გთავაზობთ პროექტირებას, სამონტაჟო მომსახურებასა და შემდგომ ტექნიკურ მხარდაჭერას
-                        ნებისმიერ ელექტრო საინსტალაციო სამუშაოებზე.</em>
+                    <p  style="color: black" ><em>
+                         <strong><em>უპირატესობები:</em></strong> <br>
+                        <strong style="color: #e76f5a"> ✓</strong> გამოცდილი გუნდი <br>
+                        <strong style="color: #e76f5a"> ✓</strong> პროდუქციის ადგილზე ხელმისაწვდომობა <br>
+                        <strong style="color: #e76f5a"> ✓</strong> ეფექტური ტექნიკური გადაწყვეტილებები <br>
+                        <strong style="color: #e76f5a"> ✓</strong> უმაღლესი ხარისხის პროდუქცია<br>
+                        <strong style="color: #e76f5a"> ✓</strong> შემდგომი ტექნიკური მხარდაჭერა<br>
+                        <strong style="color: #e76f5a"> ✓</strong> ოფიციალური ტექნიკური გარანტია<br>
+                        <strong style="color: #e76f5a"> ✓</strong> ხელმისაწვდომი ფასები<br></em>
                     </p>
                 </div>
             </div>
@@ -429,47 +500,7 @@
 </div>&ndash;&gt;
 &lt;!&ndash;    </div>&ndash;&gt;
 &lt;!&ndash;</section>&ndash;&gt;
---><center>
-    <marquee  behavior="alternate" direction="left" >
-        <div class="row">
-            <div class="column" >
-                <img  src=
-                              "img/2.jpg"
-                class="image_width">
-            </div>
-            <div class="column">
-                <img  src=
-                              "img/3.png"
-                      class="image_width">
-            </div>
-            <div class="column">
-                <img  src=
-                              "img/323.jpg"
-                      class="image_width">
-            </div>
-        </div>
-    </marquee>
-
-    <marquee  behavior="alternate" direction="right">
-        <div class="row">
-            <div class="column">
-                <img  src=
-                              "img/perkins_1.jpg"
-                      class="image_width">
-            </div>
-            <div class="column">
-                <img  src="img/WhatsApp%20Image%202023-01-31%20at%2016.18.23.jpg"
-                      alt="GeeksforGeeks logo" class="image_width">
-            </div>
-            <div class="column">
-                <img  src=
-                              "img/WhatsApp%20Image%202023-01-31%20at%2016.18.2323.jpg"
-                      alt="GeeksforGeeks logo" class="image_width">
-            </div>
-        </div>
-    </marquee>
-</center>
-
+-->
 <section class="team-area section-padding" id="team"
          style="background:url(img/caverR.png) no-repeat scroll 0 0 / cover;">
     <div class="container wow fadeIn">

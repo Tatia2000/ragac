@@ -83,7 +83,7 @@ a:hover {
 }
 
 .area-title h2 {
-    color: #020202;
+    color: #8f230f;
     display: inline-block;
     font-family: dancing script, cursive;
     font-size: 60px;
@@ -783,7 +783,7 @@ a.read-more {
 }
 
 .food-menu-details {
-    color: #1e1e1f;
+    color: #ffffff;
     padding: 0;
     text-align: inherit;
 }
@@ -1851,7 +1851,7 @@ ul.blog-instagram-feed-widget li {
 }
 
 .food-menu-img-two::after {
-    background: none 0 0 repeat scroll #000;
+    background: none 0 0 repeat scroll #f5efef;
     content: "";
     height: 100%;
     left: 0;
@@ -2332,7 +2332,7 @@ card-image:hover {
 }
 
 .column {
-    float: left;
+    float: right;
     width: 30%;
     padding: 7px;
 }

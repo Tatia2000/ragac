@@ -46,7 +46,13 @@
 <!--                              alt="logo"/></div>-->
 
 <!--<a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>-->
-
+<div id="mySidebar" class="sidebar">
+    <!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>-->
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>
 <header class="top-area" style="height: 30%">
     <div class="header-top-area">
         <div class="top-bar" style="background-color: #0b0b0b">
@@ -113,12 +119,18 @@
 
 
 </header>
-
-<section class="menus-area section-padding" id="products">
+<section class="menus-area section-padding" id="products"  style="background-image: url('/didg/img/engine_cover.png');background-size: cover;background-repeat: no-repeat;
+background-position: center center;
+">
     <div class="container wow fadeIn">
+
+<!--        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="area-title text-center">
+                <div style="margin: 10px ; align-items: center">
+                    <img src="" id="cover-image" width="100%" height="40%">
+                </div>
+                <div class="area-title text-center" >
                     <h2>პროდუქცია</h2>
                 </div>
             </div>
@@ -128,8 +140,8 @@
             <div class="wrapper" id="main-products">
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine"
-                             onclick="choose_product($(this).data('product'))">
+                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine" data-cover="/didg/img/engine_cover.png"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'))">
                         <div class="container">
                             <h4><b>ძრავები</b></h4>
                         </div>
@@ -137,7 +149,8 @@
                 </div>
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/image1.png" alt="Avatar" style="width:100%">
+                        <img src="/didg/img/image1.png" alt="Avatar" style="width:100%"data-product="systems"
+                             onclick="choose_product($(this).data('product'))">
                         <div class="container">
                             <h4><b>PLC SCADA<br> SYSTEMS</b></h4>
                         </div>
@@ -145,7 +158,8 @@
                 </div>
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/espa.png" alt="Avatar" style="width:100%">
+                        <img src="/didg/img/espa.png" alt="Avatar" style="width:100%" data-product="sempa"
+                             onclick="choose_product($(this).data('product'))">
                         <div class="container">
                             <h4><b>Sempa</b></h4>
                         </div>
@@ -153,9 +167,10 @@
                 </div>
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/wisqviliDaChiri.jpg" alt="Avatar" style="width:100%">
+                        <img src="/didg/img/wisqviliDaChiri.jpg" alt="Avatar" style="width:100%"data-product="mill"
+                             onclick="choose_product($(this).data('product'))">
                         <div class="container">
-                            <h4><b>ჭისქვილის ქარხნის<br>სათადარიგო ნაწილები</b></h4>
+                            <h4><b>წისქვილის ქარხნის<br>სათადარიგო ნაწილები</b></h4>
                         </div>
                     </div>
                 </div>
@@ -298,6 +313,421 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
                     </div>
                 </div>
             </div>
+            <div class="wrapper" id="systems" style="visibility: hidden; display: none">
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               ეს არის ელექტროძრავა, რომელიც შედგება 2 ძირითადი <br>
+                               ნაწილისგან, როტორისა და სტატორისგან, რომლებიც <br> ქმნიან
+                               დაბალანსებულ ინდუქციურ დატვირთვას სამფაზიან <br> განაწილების
+                               სისტემაში. როტორის სტრუქტურის მიხედვით,<br>იგი იწარმოება
+                               ორ ტიპად: სინქრონული და ასინქრონული. <br>სამრეწველო სექტორში
+                               სასურველია ასინქრონული ძრავის <br>გამოყენება. GAMAK-ის
+                               პროდუქციის ასორტიმენტში არის ასინქრონული ძრავები
+                               (მოკლე ჩართვის)  როტორებით. <br><br>
+                             <strong>   სამ ფაზიანი/Three Phase (არ ვთარგმნით)<br><br>
+•        0,06-1000 kw<br><br>
+•        56-450 Frame<br><br>
+•        2-8 Poles<br><br>
+•        Double Speed Motors<br><br>
+•        IE1/IE2/IE3/IE4   Efficiency<br><br>
+•        Fixed/Attachable Feet - ფეხებით/ ფეხების გარეშე <br><br><br><br><br></strong>
+AGM - ძრავი ალუმინის კორპუსით.<br><br>
+GM - ძრავი თუჯის კორპუსით.<br><br>
+AGM/GM B3 ტიპის ძრავი<br><br>
+AGM/GM B14 ტიპის ძრავი<br><br>
+AGM/GM B5 ტიპის ძრავი<br><br>
+AGM/GM B34 ტიპის ძრავი<br><br>
+AGM/GM B35 ტიპის ძრავი<br><br>
+C.AGM/GM ტიპის ძრავი (კომპაქტ ვერსია)
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>სამ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/ertpaza.jpg" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/ertpaza.jpg" data-text="
+                               ერთფაზიანი ძრავები, მექანიკური თვალსაზრისით, შეესაბამება იმავე <br>სტანდარტებს,
+                               როგორსაც 3-ფაზიანი ძრავები. ერთფაზიან ძრავებში, <br> მბრუნავი  ველი, რომელიც ქმნის ძრავის ბრუნვას,
+                               იქმნება ორი ცალკეული გრაგნილის დახმარებით, რომელსაც ეწოდება ძირითადი და დამხმარე <br> გრაგნილი. ეს ძრავები
+                               შეიძლება შეირჩეს მუდმივი კონდენსატორებით ან გაშვებით + მუდმივი მიკროსქემის კონდენსატორებით,
+                               იმის მიხედვით, თუ რა აპლიკაციიდან გამოიყენებენ. <br><br>
+                             <strong>   MD სერიის ძრავი<br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame<br><br>
+•        MD: Permanent Split Capacitor Motor/ერთ კონდენსატორიანი ძრავი<br><br>
+•        MKD სერიის ძრავი<br><br>
+Single Phase <br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame
+•        MKD: Capacitor Start & Run Motors with Mechanical Switch/ორ კონდენსატორიანი ძრავი მექანიკური გადამრთველით<br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>ერთ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               GAMAK საშუალო ძაბვის ძრავები გამოიყენება ყველა ინდუსტრიაში,<br> მძიმე
+                               ტვირთსა და კომპლექსურ დავალებებთან სამუშაოდ; მათ შორის<br> ნავთობისა და
+                               გაზის, ელექტროენერგიის გამომუშავების, საზღვაო, <br>რბილობი და ქაღალდის,
+                                ცემენტის, სამთო, ლითონისა და წყლის <br>დამუშავებაში. GAMAK-ის საშუალო
+                                ძაბვის ასინქრონული ძრავები აღემატება მათ კოლეგებს მუშაობის და გამძლეობის
+                                 თვალსაზრისით. <br><br>
+                                 რაც განასხვავებს GAMAK-ს ამ სფეროში მისი კონკურენტებისგან არის <br>ჩვენი
+                                 ინდივიდუალური დიზაინი, პერსონალიზაცია, საიმედოობა და <br> მოქნილობის შესაძლებლობები.
+                                 ჩვენი საშუალო ძაბვის ძრავისა და<br> გენერატორის გადაწყვეტილებები შემუშავებულია
+                                 მოწინავე ანალიტიკური <br>ხელსაწყოების გამოყენებით კონკრეტული მომხმარებლის
+                                 აპლიკაციისთვის საუკეთესო დიზაინის გამოსავლენად და შესრულების ხარჯების
+                                 ოპტიმიზაციის დასადგენად.<br><br>
+                                 GAMAK საშუალო ძაბვის ძრავები მოიცავს ძრავებს, რომლებიც წარმოებულია <br>ინდუსტრიაში
+                                 ზოგადი გამოყენებისთვის 150–3000 კვტ დიაპაზონში, სტრუქტურის ზომით 315–630.<br><br><br>
+                             <strong>  ზოგადი მახასიათებლები: <br><br><br>
+•        გალიის როტორი / თუჯის ჩარჩო<br><br>
+•        სრულად დახურული (TEFC) - (TEFV) - (TEAAC)<br><br>
+•        ძაბვის დიაპაზონი : 1000 - 11000 В<br><br>
+•        სიმძლავრის დიაპაზონი: 150 - 3000 кВт<br><br>
+•        სტრუქტურის ზომა: 315 - 630 (МЭК)<br><br>
+•        სამონტაჟო ტიპი: IMB3-IMV1-IMV3<br><br>
+•        ოპერაციული ტიპი: S1 სტანდარტული, S1-8 სურვილისამებრ<br><br>
+•        დაცვის კლასი: IP 55<br><br>
+•        საიზოლაციო კლასი: F (155 ° C)<br><br>
+•        ტემპერატურის აწევის კლასი: Класс B (80K)<br><br>
+•        ბოძების რაოდენობა: 2-12<br><br>
+•        გაგრილების ტიპი: IC411-IC416-IC611<br><br>
+•        PT100 ტარებაში და გრაგნილში
+•        თერმისტორი<br><br>
+•        საპოხი ლაქები<br><br>
+•        თანატარება
+•        დაწყების მეთოდი: DOL, VFD, Soft Starter<br><br>
+•        საკაბელო ყუთი: 180 გრადუსით ცვალებადი (მარცხნივ-მარჯვნივ)<br><br>
+•        შეღებვა: სტანდარტული RAL 7031, სხვა ფერები სურვილისამებრ<br><br>
+•        დაცვა: IP56-მდე<br><br>
+•        საკისარი: სტანდარტული საკისარი, გაძლიერებული დიზაინი რადიალური ძალებისთვის არჩევითი საკისრები<br><br>
+•        როტაცია: ორივე მხარეს როტაცია<br><br>
+•       სიხშირე: 50-60Hz<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>საშუალო ძაბვის<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/cecxlgamdzle.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/cecxlgamdzle.png" data-text="
+                               ეს არის 3-ფაზიანი, ასინქრონული ელექტროძრავის ჯგუფი, <br> რომელიც დაყოფილია
+                               71-80-90 S -90 L – 100 L – 112 M -132 S -132 <br> M -160 M -160 L -180 M -180 L.
+                                -200 L -225 MS – 250 M IEC სტანდარტების<br> მიხედვით და შექმნილია შესაბამისი
+                                ტიპის კრიტერიუმების დასაკმაყოფილებლად. იგი ელექტრულად გათვლილია 2-4-6 ან<br>
+                                 8 პოლუსზე, რომელთა მუშაობაც შესაძლებელია პირდაპირი ელექტრომომარაგებით. <br><br>
+                             <strong>   Explosive & Flammable Atmospheres/ ფეთქებადი და აალებადი ატმოსფერო<br><br>
+•        0,18-75 kW<br><br>
+•        71-250 Frame<br><br>
+•        IE1, IE2, IE3 Efficiency<br><br>
+•        ATEX Certified (Ex d)<br><br>
+•        Cast Iron material<br><br><br>
+ძრავის სათადარიგო ნაწილები<br><br>
+ძრავის ჩარჩო, საფარი, ფლიანეცის და ტერმინალის ყუთი<br><br>
+Motor frame, cover, flange and terminal box up to 225 frame<br><br>
+• B5 ფლიანეცი/ B5 flange<br><br>
+• B14 ფლიანეცი/ B14 flange<br><br>
+• ძრავის ხუფი<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>Ex-proof (ცეცხლგამძლე)<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="sempa" style="visibility: hidden; display: none">
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               ეს არის ელექტროძრავა, რომელიც შედგება 2 ძირითადი <br>
+                               ნაწილისგან, როტორისა და სტატორისგან, რომლებიც <br> ქმნიან
+                               დაბალანსებულ ინდუქციურ დატვირთვას სამფაზიან <br> განაწილების
+                               სისტემაში. როტორის სტრუქტურის მიხედვით,<br>იგი იწარმოება
+                               ორ ტიპად: სინქრონული და ასინქრონული. <br>სამრეწველო სექტორში
+                               სასურველია ასინქრონული ძრავის <br>გამოყენება. GAMAK-ის
+                               პროდუქციის ასორტიმენტში არის ასინქრონული ძრავები
+                               (მოკლე ჩართვის)  როტორებით. <br><br>
+                             <strong>   სამ ფაზიანი/Three Phase (არ ვთარგმნით)<br><br>
+•        0,06-1000 kw<br><br>
+•        56-450 Frame<br><br>
+•        2-8 Poles<br><br>
+•        Double Speed Motors<br><br>
+•        IE1/IE2/IE3/IE4   Efficiency<br><br>
+•        Fixed/Attachable Feet - ფეხებით/ ფეხების გარეშე <br><br><br><br><br></strong>
+AGM - ძრავი ალუმინის კორპუსით.<br><br>
+GM - ძრავი თუჯის კორპუსით.<br><br>
+AGM/GM B3 ტიპის ძრავი<br><br>
+AGM/GM B14 ტიპის ძრავი<br><br>
+AGM/GM B5 ტიპის ძრავი<br><br>
+AGM/GM B34 ტიპის ძრავი<br><br>
+AGM/GM B35 ტიპის ძრავი<br><br>
+C.AGM/GM ტიპის ძრავი (კომპაქტ ვერსია)
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>სამ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/ertpaza.jpg" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/ertpaza.jpg" data-text="
+                               ერთფაზიანი ძრავები, მექანიკური თვალსაზრისით, შეესაბამება იმავე <br>სტანდარტებს,
+                               როგორსაც 3-ფაზიანი ძრავები. ერთფაზიან ძრავებში, <br> მბრუნავი  ველი, რომელიც ქმნის ძრავის ბრუნვას,
+                               იქმნება ორი ცალკეული გრაგნილის დახმარებით, რომელსაც ეწოდება ძირითადი და დამხმარე <br> გრაგნილი. ეს ძრავები
+                               შეიძლება შეირჩეს მუდმივი კონდენსატორებით ან გაშვებით + მუდმივი მიკროსქემის კონდენსატორებით,
+                               იმის მიხედვით, თუ რა აპლიკაციიდან გამოიყენებენ. <br><br>
+                             <strong>   MD სერიის ძრავი<br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame<br><br>
+•        MD: Permanent Split Capacitor Motor/ერთ კონდენსატორიანი ძრავი<br><br>
+•        MKD სერიის ძრავი<br><br>
+Single Phase <br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame
+•        MKD: Capacitor Start & Run Motors with Mechanical Switch/ორ კონდენსატორიანი ძრავი მექანიკური გადამრთველით<br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>ერთ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               GAMAK საშუალო ძაბვის ძრავები გამოიყენება ყველა ინდუსტრიაში,<br> მძიმე
+                               ტვირთსა და კომპლექსურ დავალებებთან სამუშაოდ; მათ შორის<br> ნავთობისა და
+                               გაზის, ელექტროენერგიის გამომუშავების, საზღვაო, <br>რბილობი და ქაღალდის,
+                                ცემენტის, სამთო, ლითონისა და წყლის <br>დამუშავებაში. GAMAK-ის საშუალო
+                                ძაბვის ასინქრონული ძრავები აღემატება მათ კოლეგებს მუშაობის და გამძლეობის
+                                 თვალსაზრისით. <br><br>
+                                 რაც განასხვავებს GAMAK-ს ამ სფეროში მისი კონკურენტებისგან არის <br>ჩვენი
+                                 ინდივიდუალური დიზაინი, პერსონალიზაცია, საიმედოობა და <br> მოქნილობის შესაძლებლობები.
+                                 ჩვენი საშუალო ძაბვის ძრავისა და<br> გენერატორის გადაწყვეტილებები შემუშავებულია
+                                 მოწინავე ანალიტიკური <br>ხელსაწყოების გამოყენებით კონკრეტული მომხმარებლის
+                                 აპლიკაციისთვის საუკეთესო დიზაინის გამოსავლენად და შესრულების ხარჯების
+                                 ოპტიმიზაციის დასადგენად.<br><br>
+                                 GAMAK საშუალო ძაბვის ძრავები მოიცავს ძრავებს, რომლებიც წარმოებულია <br>ინდუსტრიაში
+                                 ზოგადი გამოყენებისთვის 150–3000 კვტ დიაპაზონში, სტრუქტურის ზომით 315–630.<br><br><br>
+                             <strong>  ზოგადი მახასიათებლები: <br><br><br>
+•        გალიის როტორი / თუჯის ჩარჩო<br><br>
+•        სრულად დახურული (TEFC) - (TEFV) - (TEAAC)<br><br>
+•        ძაბვის დიაპაზონი : 1000 - 11000 В<br><br>
+•        სიმძლავრის დიაპაზონი: 150 - 3000 кВт<br><br>
+•        სტრუქტურის ზომა: 315 - 630 (МЭК)<br><br>
+•        სამონტაჟო ტიპი: IMB3-IMV1-IMV3<br><br>
+•        ოპერაციული ტიპი: S1 სტანდარტული, S1-8 სურვილისამებრ<br><br>
+•        დაცვის კლასი: IP 55<br><br>
+•        საიზოლაციო კლასი: F (155 ° C)<br><br>
+•        ტემპერატურის აწევის კლასი: Класс B (80K)<br><br>
+•        ბოძების რაოდენობა: 2-12<br><br>
+•        გაგრილების ტიპი: IC411-IC416-IC611<br><br>
+•        PT100 ტარებაში და გრაგნილში
+•        თერმისტორი<br><br>
+•        საპოხი ლაქები<br><br>
+•        თანატარება
+•        დაწყების მეთოდი: DOL, VFD, Soft Starter<br><br>
+•        საკაბელო ყუთი: 180 გრადუსით ცვალებადი (მარცხნივ-მარჯვნივ)<br><br>
+•        შეღებვა: სტანდარტული RAL 7031, სხვა ფერები სურვილისამებრ<br><br>
+•        დაცვა: IP56-მდე<br><br>
+•        საკისარი: სტანდარტული საკისარი, გაძლიერებული დიზაინი რადიალური ძალებისთვის არჩევითი საკისრები<br><br>
+•        როტაცია: ორივე მხარეს როტაცია<br><br>
+•       სიხშირე: 50-60Hz<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>საშუალო ძაბვის<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/cecxlgamdzle.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/cecxlgamdzle.png" data-text="
+                               ეს არის 3-ფაზიანი, ასინქრონული ელექტროძრავის ჯგუფი, <br> რომელიც დაყოფილია
+                               71-80-90 S -90 L – 100 L – 112 M -132 S -132 <br> M -160 M -160 L -180 M -180 L.
+                                -200 L -225 MS – 250 M IEC სტანდარტების<br> მიხედვით და შექმნილია შესაბამისი
+                                ტიპის კრიტერიუმების დასაკმაყოფილებლად. იგი ელექტრულად გათვლილია 2-4-6 ან<br>
+                                 8 პოლუსზე, რომელთა მუშაობაც შესაძლებელია პირდაპირი ელექტრომომარაგებით. <br><br>
+                             <strong>   Explosive & Flammable Atmospheres/ ფეთქებადი და აალებადი ატმოსფერო<br><br>
+•        0,18-75 kW<br><br>
+•        71-250 Frame<br><br>
+•        IE1, IE2, IE3 Efficiency<br><br>
+•        ATEX Certified (Ex d)<br><br>
+•        Cast Iron material<br><br><br>
+ძრავის სათადარიგო ნაწილები<br><br>
+ძრავის ჩარჩო, საფარი, ფლიანეცის და ტერმინალის ყუთი<br><br>
+Motor frame, cover, flange and terminal box up to 225 frame<br><br>
+• B5 ფლიანეცი/ B5 flange<br><br>
+• B14 ფლიანეცი/ B14 flange<br><br>
+• ძრავის ხუფი<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>Ex-proof (ცეცხლგამძლე)<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="mill" style="visibility: hidden; display: none">
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               ეს არის ელექტროძრავა, რომელიც შედგება 2 ძირითადი <br>
+                               ნაწილისგან, როტორისა და სტატორისგან, რომლებიც <br> ქმნიან
+                               დაბალანსებულ ინდუქციურ დატვირთვას სამფაზიან <br> განაწილების
+                               სისტემაში. როტორის სტრუქტურის მიხედვით,<br>იგი იწარმოება
+                               ორ ტიპად: სინქრონული და ასინქრონული. <br>სამრეწველო სექტორში
+                               სასურველია ასინქრონული ძრავის <br>გამოყენება. GAMAK-ის
+                               პროდუქციის ასორტიმენტში არის ასინქრონული ძრავები
+                               (მოკლე ჩართვის)  როტორებით. <br><br>
+                             <strong>   სამ ფაზიანი/Three Phase (არ ვთარგმნით)<br><br>
+•        0,06-1000 kw<br><br>
+•        56-450 Frame<br><br>
+•        2-8 Poles<br><br>
+•        Double Speed Motors<br><br>
+•        IE1/IE2/IE3/IE4   Efficiency<br><br>
+•        Fixed/Attachable Feet - ფეხებით/ ფეხების გარეშე <br><br><br><br><br></strong>
+AGM - ძრავი ალუმინის კორპუსით.<br><br>
+GM - ძრავი თუჯის კორპუსით.<br><br>
+AGM/GM B3 ტიპის ძრავი<br><br>
+AGM/GM B14 ტიპის ძრავი<br><br>
+AGM/GM B5 ტიპის ძრავი<br><br>
+AGM/GM B34 ტიპის ძრავი<br><br>
+AGM/GM B35 ტიპის ძრავი<br><br>
+C.AGM/GM ტიპის ძრავი (კომპაქტ ვერსია)
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>სამ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/ertpaza.jpg" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/ertpaza.jpg" data-text="
+                               ერთფაზიანი ძრავები, მექანიკური თვალსაზრისით, შეესაბამება იმავე <br>სტანდარტებს,
+                               როგორსაც 3-ფაზიანი ძრავები. ერთფაზიან ძრავებში, <br> მბრუნავი  ველი, რომელიც ქმნის ძრავის ბრუნვას,
+                               იქმნება ორი ცალკეული გრაგნილის დახმარებით, რომელსაც ეწოდება ძირითადი და დამხმარე <br> გრაგნილი. ეს ძრავები
+                               შეიძლება შეირჩეს მუდმივი კონდენსატორებით ან გაშვებით + მუდმივი მიკროსქემის კონდენსატორებით,
+                               იმის მიხედვით, თუ რა აპლიკაციიდან გამოიყენებენ. <br><br>
+                             <strong>   MD სერიის ძრავი<br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame<br><br>
+•        MD: Permanent Split Capacitor Motor/ერთ კონდენსატორიანი ძრავი<br><br>
+•        MKD სერიის ძრავი<br><br>
+Single Phase <br><br>
+•        0,12-4 kW<br><br>
+•        63-112 Frame
+•        MKD: Capacitor Start & Run Motors with Mechanical Switch/ორ კონდენსატორიანი ძრავი მექანიკური გადამრთველით<br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>ერთ ფაზიანი<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/sampaza.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/sampaza.png" data-text="
+                               GAMAK საშუალო ძაბვის ძრავები გამოიყენება ყველა ინდუსტრიაში,<br> მძიმე
+                               ტვირთსა და კომპლექსურ დავალებებთან სამუშაოდ; მათ შორის<br> ნავთობისა და
+                               გაზის, ელექტროენერგიის გამომუშავების, საზღვაო, <br>რბილობი და ქაღალდის,
+                                ცემენტის, სამთო, ლითონისა და წყლის <br>დამუშავებაში. GAMAK-ის საშუალო
+                                ძაბვის ასინქრონული ძრავები აღემატება მათ კოლეგებს მუშაობის და გამძლეობის
+                                 თვალსაზრისით. <br><br>
+                                 რაც განასხვავებს GAMAK-ს ამ სფეროში მისი კონკურენტებისგან არის <br>ჩვენი
+                                 ინდივიდუალური დიზაინი, პერსონალიზაცია, საიმედოობა და <br> მოქნილობის შესაძლებლობები.
+                                 ჩვენი საშუალო ძაბვის ძრავისა და<br> გენერატორის გადაწყვეტილებები შემუშავებულია
+                                 მოწინავე ანალიტიკური <br>ხელსაწყოების გამოყენებით კონკრეტული მომხმარებლის
+                                 აპლიკაციისთვის საუკეთესო დიზაინის გამოსავლენად და შესრულების ხარჯების
+                                 ოპტიმიზაციის დასადგენად.<br><br>
+                                 GAMAK საშუალო ძაბვის ძრავები მოიცავს ძრავებს, რომლებიც წარმოებულია <br>ინდუსტრიაში
+                                 ზოგადი გამოყენებისთვის 150–3000 კვტ დიაპაზონში, სტრუქტურის ზომით 315–630.<br><br><br>
+                             <strong>  ზოგადი მახასიათებლები: <br><br><br>
+•        გალიის როტორი / თუჯის ჩარჩო<br><br>
+•        სრულად დახურული (TEFC) - (TEFV) - (TEAAC)<br><br>
+•        ძაბვის დიაპაზონი : 1000 - 11000 В<br><br>
+•        სიმძლავრის დიაპაზონი: 150 - 3000 кВт<br><br>
+•        სტრუქტურის ზომა: 315 - 630 (МЭК)<br><br>
+•        სამონტაჟო ტიპი: IMB3-IMV1-IMV3<br><br>
+•        ოპერაციული ტიპი: S1 სტანდარტული, S1-8 სურვილისამებრ<br><br>
+•        დაცვის კლასი: IP 55<br><br>
+•        საიზოლაციო კლასი: F (155 ° C)<br><br>
+•        ტემპერატურის აწევის კლასი: Класс B (80K)<br><br>
+•        ბოძების რაოდენობა: 2-12<br><br>
+•        გაგრილების ტიპი: IC411-IC416-IC611<br><br>
+•        PT100 ტარებაში და გრაგნილში
+•        თერმისტორი<br><br>
+•        საპოხი ლაქები<br><br>
+•        თანატარება
+•        დაწყების მეთოდი: DOL, VFD, Soft Starter<br><br>
+•        საკაბელო ყუთი: 180 გრადუსით ცვალებადი (მარცხნივ-მარჯვნივ)<br><br>
+•        შეღებვა: სტანდარტული RAL 7031, სხვა ფერები სურვილისამებრ<br><br>
+•        დაცვა: IP56-მდე<br><br>
+•        საკისარი: სტანდარტული საკისარი, გაძლიერებული დიზაინი რადიალური ძალებისთვის არჩევითი საკისრები<br><br>
+•        როტაცია: ორივე მხარეს როტაცია<br><br>
+•       სიხშირე: 50-60Hz<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>საშუალო ძაბვის<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/cecxlgamdzle.png" alt="Avatar" style="width:100%"
+                             data-product="engine" data-image="/didg/img/cecxlgamdzle.png" data-text="
+                               ეს არის 3-ფაზიანი, ასინქრონული ელექტროძრავის ჯგუფი, <br> რომელიც დაყოფილია
+                               71-80-90 S -90 L – 100 L – 112 M -132 S -132 <br> M -160 M -160 L -180 M -180 L.
+                                -200 L -225 MS – 250 M IEC სტანდარტების<br> მიხედვით და შექმნილია შესაბამისი
+                                ტიპის კრიტერიუმების დასაკმაყოფილებლად. იგი ელექტრულად გათვლილია 2-4-6 ან<br>
+                                 8 პოლუსზე, რომელთა მუშაობაც შესაძლებელია პირდაპირი ელექტრომომარაგებით. <br><br>
+                             <strong>   Explosive & Flammable Atmospheres/ ფეთქებადი და აალებადი ატმოსფერო<br><br>
+•        0,18-75 kW<br><br>
+•        71-250 Frame<br><br>
+•        IE1, IE2, IE3 Efficiency<br><br>
+•        ATEX Certified (Ex d)<br><br>
+•        Cast Iron material<br><br><br>
+ძრავის სათადარიგო ნაწილები<br><br>
+ძრავის ჩარჩო, საფარი, ფლიანეცის და ტერმინალის ყუთი<br><br>
+Motor frame, cover, flange and terminal box up to 225 frame<br><br>
+• B5 ფლიანეცი/ B5 flange<br><br>
+• B14 ფლიანეცი/ B14 flange<br><br>
+• ძრავის ხუფი<br><br><br><br><br><br><br><br><br></strong>
+"
+                             onclick="openDetailView($(this).data('image'),$(this).data('text'))">
+                        <div class="container">
+                            <h4><b>Ex-proof (ცეცხლგამძლე)<br> ძრავი</b></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="detail-container" id="detail-view" style="display: none; visibility: hidden">
                 <div class="image" >
                     <img src="" id="detail-image" style="max-width: 80%; max-height:80%;">
@@ -350,21 +780,31 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
     </div>
 </div>
 <script>
-    function choose_product(el) {
+    let previousTab=null;
+    function choose_product(el,image) {
         // console.log(el)
+        const me=this;
         const mainProducts = document.getElementById("main-products");
         let subEl = document.getElementById(el);
         mainProducts.style.visibility = 'hidden';
         mainProducts.style.display = "none"
         subEl.style.visibility = "visible"
         subEl.style.display = "grid"
+        me.openNav();
         document.getElementById("previous").style.visibility = "visible"
+        document.getElementById("mySidebar").style.height = "100%";
+        previousTab=el;
+        debugger;
+        if(image){
+            document.getElementById("cover-image").src=image;
+        }
         // document.getElementById("demo").style.color = "red";
     };
 
     function previous() {
+        const me=this;
         const mainProducts = document.getElementById("main-products");
-        let subEl = document.getElementById("engine");
+        let subEl = document.getElementById(previousTab);
         let detail=document.getElementById("detail-view");
         subEl.style.visibility = 'hidden';
         subEl.style.display = "none";
@@ -372,21 +812,32 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
         detail.style.display = "none";
         mainProducts.style.visibility = "visible";
         mainProducts.style.display = "grid";
+        me.closeNav();
         document.getElementById("previous").style.visibility = "hidden";
 
     };
 
     function openDetailView(url,text) {
-        let subEl = document.getElementById("engine");
+        let subEl = document.getElementById(previousTab);
         let detail=document.getElementById("detail-view");
         subEl.style.visibility = 'hidden';
         subEl.style.display = "none"
-
         document.getElementById("detail-image").src = url;
         document.getElementById("detail-text").innerHTML=text
         detail.style.visibility = "visible";
         detail.style.display = "flex";
+        document.getElementById("mySidebar").style.height = "100%";
+    };
 
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "10%";
+        // document.getElementById("main").style.marginLeft = "20%";
+    }
+
+    function closeNav() {
+        debugger;
+        document.getElementById("mySidebar").style.width = "0";
+        // document.getElementById("main").style.marginLeft = "0";
     }
 
 </script>

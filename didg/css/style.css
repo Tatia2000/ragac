@@ -83,7 +83,7 @@ a:hover {
 }
 
 .area-title h2 {
-    color: #ca3d26;
+    color: #020202;
     display: inline-block;
     font-family: dancing script, cursive;
     font-size: 60px;
@@ -93,7 +93,7 @@ a:hover {
     padding: 0 20px 45px;
     position: relative;
     text-transform: capitalize;
-    font-family: "BPG Arial Caps", sans-serif;
+    font-family: "Serif", sans-serif;
 
 }
 

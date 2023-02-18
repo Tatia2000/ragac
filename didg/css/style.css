@@ -108,7 +108,7 @@ a:hover {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 0px;
 }
 
 .no-padding {
@@ -623,7 +623,7 @@ a.search-form-trigger::before {
 }
 
 .about-content {
-    color: #ffffff;
+    color: #020202;
 }
 
 a.read-more {
@@ -1751,7 +1751,7 @@ ul.blog-instagram-feed-widget li {
 
 .welcome-text-area {
     align-items: center;
-    color: #fff;
+    color: #ffffff;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -2346,4 +2346,35 @@ card-image:hover {
 .image_width {
     width: 60%;
     height: 30%;
+}
+.google-map {
+    padding-bottom: 50%;
+    /*position: relative;*/
+}
+.google-map iframe {
+    height: 50%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.containeree {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+}
+
+.img {
+    max-width: 40%;
+    max-height:40%;
+    margin-left: 50px;
+}
+
+.text {
+    font-size: 13px;
+}
+.textForIcons {
+    font-size: 18px;
+    color: #0b0b0b;
 }

@@ -30,7 +30,9 @@
     <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
-<body>
+<body style="background-size: cover;background-repeat: no-repeat;
+background-position: center center;
+">
 
 <!--<div style="width: 60px;-->
 <!--    height: 60px;-->
@@ -46,14 +48,8 @@
 <!--                              alt="logo"/></div>-->
 
 <!--<a href="#home" class="scrolltotop"><i class="fa fa-long-arrow-up"></i></a>-->
-<div id="mySidebar" class="sidebar">
-    <!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>-->
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-</div>
-<header class="top-area" style="height: 30%">
+
+<header class="top-area" style="height: 20%; background: #aeaaa3; padding-bottom: 0px">
     <div class="header-top-area">
         <div class="top-bar" style="background-color: #0b0b0b">
             <div class="container">
@@ -105,8 +101,8 @@
 
                         </div>
                         <ul id="nav" class="nav navbar-nav">
-                            <li><a href="index.html" >მთავარი</a></li>
-                            <li><a href="service.html" >სერვისები</a></li>
+                            <li><a href="index.html">მთავარი</a></li>
+                            <li><a href="service.html">სერვისები</a></li>
                             <li class="active"><a href="#products">პროდუქცია</a></li>
                             <li><a href="#contact">კონტაქტი</a></li>
                             <li><a href="contactUs.html">დაგვიკავშირდით</a></li>
@@ -119,19 +115,27 @@
 
 
 </header>
-<section class="menus-area section-padding" id="products"  style="background-image: url('/didg/img/engine_cover.png');background-size: cover;background-repeat: no-repeat;
-background-position: center center;
-">
-    <div class="container wow fadeIn">
+<div><img id="cover-image" src="" style="width: 100%; height: 25%; display: none;"></div>
+<section class="menus-area" id="products" style="background: #aeaaa3;padding-top: 0px">
+    <div id="mySidebar" class="sidebar">
+        <!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>-->
+        <a href="#">ძრავი</a>
+        <a href="#">PLC SCADA</a>
+        <a href="#">Sempa</a>
+        <a href="#">წისქვილი</a>
+        <a href="#">კომპრესორი</a>
+        <a href="#">დიზელის გენერატორი</a>
+        <a href="#">რედუქტორი</a>
+        <a href="#">ძრავის მუხრუჭი</a>
 
-<!--        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
-        <div class="row">
+    </div>
+    <div class="container">
+
+        <!--        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
+        <div class="row" style="padding-top: 10px">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div style="margin: 10px ; align-items: center">
-                    <img src="" id="cover-image" width="100%" height="40%">
-                </div>
-                <div class="area-title text-center" >
-                    <h2>პროდუქცია</h2>
+                <div class="area-title text-center">
+                    <h2 id="head-text">პროდუქცია</h2>
                 </div>
             </div>
             <p id="previous" style="visibility: hidden; cursor: pointer;" onclick="previous()"><i
@@ -140,7 +144,8 @@ background-position: center center;
             <div class="wrapper" id="main-products">
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine" data-cover="/didg/img/engine_cover.png"
+                        <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine"
+                             data-cover="/didg/img/engine-cover.png"
                              onclick="choose_product($(this).data('product'),$(this).data('cover'))">
                         <div class="container">
                             <h4><b>ძრავები</b></h4>
@@ -149,7 +154,7 @@ background-position: center center;
                 </div>
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/image1.png" alt="Avatar" style="width:100%"data-product="systems"
+                        <img src="/didg/img/PLC-main.png" alt="Avatar" style="width:100%" data-product="systems"
                              onclick="choose_product($(this).data('product'))">
                         <div class="container">
                             <h4><b>PLC SCADA<br> SYSTEMS</b></h4>
@@ -167,10 +172,48 @@ background-position: center center;
                 </div>
                 <div class="block">
                     <div class="card">
-                        <img src="/didg/img/wisqviliDaChiri.jpg" alt="Avatar" style="width:100%"data-product="mill"
+                        <img src="/didg/img/wisqviliDaChiri.jpg" alt="Avatar" style="width:100%" data-product="mill"
                              onclick="choose_product($(this).data('product'))">
                         <div class="container">
                             <h4><b>წისქვილის ქარხნის<br>სათადარიგო ნაწილები</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/ozen-kompresor-main.jpg" alt="Avatar" style="width:100%"
+                             data-product="ozen-compressor"
+                             onclick="choose_product($(this).data('product'))">
+                        <div class="container">
+                            <h4><b>კომპრესორი </b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/trio-gen-main.png" alt="Avatar" style="width:100%" data-product="trio-gen"
+                             onclick="choose_product($(this).data('product'))">
+                        <div class="container">
+                            <h4><b>დიზელ<br>გენერატორები </b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/editor-main.png" alt="Avatar" style="width:100%" data-product="trio-gen"
+                             onclick="choose_product($(this).data('product'))">
+                        <div class="container">
+                            <h4><b>რედაქტორი და<br>სათადარიგო ნაწილები</b></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        <img src="/didg/img/engine-break-main.jfif" alt="Avatar" style="width:100%"
+                             data-product="trio-gen"
+                             onclick="choose_product($(this).data('product'))">
+                        <div class="container">
+                            <h4><b>ძრავის მუხრუჭი</b></h4>
                         </div>
                     </div>
                 </div>
@@ -729,7 +772,7 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
             </div>
 
             <div class="detail-container" id="detail-view" style="display: none; visibility: hidden">
-                <div class="image" >
+                <div class="image">
                     <img src="" id="detail-image" style="max-width: 80%; max-height:80%;">
                 </div>
                 <div class="text">
@@ -780,10 +823,11 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
     </div>
 </div>
 <script>
-    let previousTab=null;
-    function choose_product(el,image) {
+    let previousTab = null;
+
+    function choose_product(el, image) {
         // console.log(el)
-        const me=this;
+        const me = this;
         const mainProducts = document.getElementById("main-products");
         let subEl = document.getElementById(el);
         mainProducts.style.visibility = 'hidden';
@@ -793,19 +837,22 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
         me.openNav();
         document.getElementById("previous").style.visibility = "visible"
         document.getElementById("mySidebar").style.height = "100%";
-        previousTab=el;
+        previousTab = el;
         debugger;
-        if(image){
-            document.getElementById("cover-image").src=image;
+        document.getElementById("head-text").innerText = 'ძრავები'
+        if (image) {
+            document.getElementById('cover-image').src = image;
+            document.getElementById('cover-image').style.display = 'initial';
+
         }
         // document.getElementById("demo").style.color = "red";
     };
 
     function previous() {
-        const me=this;
+        const me = this;
         const mainProducts = document.getElementById("main-products");
         let subEl = document.getElementById(previousTab);
-        let detail=document.getElementById("detail-view");
+        let detail = document.getElementById("detail-view");
         subEl.style.visibility = 'hidden';
         subEl.style.display = "none";
         detail.style.visibility = 'hidden';
@@ -814,16 +861,18 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
         mainProducts.style.display = "grid";
         me.closeNav();
         document.getElementById("previous").style.visibility = "hidden";
-
+        document.getElementById('cover-image').src = "";
+        document.getElementById('cover-image').style.display = "none";
+        document.getElementById("head-text").innerText = 'პროდუქტები'
     };
 
-    function openDetailView(url,text) {
+    function openDetailView(url, text) {
         let subEl = document.getElementById(previousTab);
-        let detail=document.getElementById("detail-view");
+        let detail = document.getElementById("detail-view");
         subEl.style.visibility = 'hidden';
         subEl.style.display = "none"
         document.getElementById("detail-image").src = url;
-        document.getElementById("detail-text").innerHTML=text
+        document.getElementById("detail-text").innerHTML = text
         detail.style.visibility = "visible";
         detail.style.display = "flex";
         document.getElementById("mySidebar").style.height = "100%";

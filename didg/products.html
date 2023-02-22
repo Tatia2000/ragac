@@ -116,29 +116,34 @@ background-position: center center;
 
 </header>
 <!--<div><img id="cover-image" src="" style="width: 100%; "></div>-->
-<section class="menus-area" id="products" style="background-image: url('/didg/img/main-cover-products.jpg');  background-repeat: no-repeat, repeat;background-size: cover;padding-top: 0px">
+<section class="menus-area" id="products"
+         style="background-image: url('/didg/img/main-cover-products.jpg');  background-repeat: no-repeat, repeat;background-size: cover;padding-top: 0px">
     <div id="mySidebar" class="sidebar">
         <!--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>-->
-        <a href="#">ძრავი</a>
-        <a href="#">PLC SCADA</a>
-        <a href="#">Sempa</a>
-        <a href="#">წისქვილი</a>
-        <a href="#">კომპრესორი</a>
-        <a href="#">დიზელის გენერატორი</a>
-        <a href="#">რედუქტორი</a>
-        <a href="#">ძრავის მუხრუჭი</a>
+        <a data-product="engine"
+           data-cover="/didg/img/engine-cover.png"
+           data-title="ძრავი"
+           onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">ძრავი</a>
+        <a data-product="systems"
+           data-title="სისტემები"
+           onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">PLC SCADA</a>
+<!--        data-cover="/didg/img/engine-cover.png"-->
+        <a>Sempa</a>
+        <a>წისქვილი</a>
+        <a>კომპრესორი</a>
+        <a>დიზელის გენერატორი</a>
+        <a>რედუქტორი</a>
+        <a>ძრავის მუხრუჭი</a>
 
     </div>
     <div class="container">
-
-        <!--        <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
         <div class="row" style="padding-top: 20px">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                 <div class="area-title text-center">
                     <h2 id="head-text">პროდუქცია</h2>
                 </div>
             </div>
-            <p id="previous" style="visibility: hidden; cursor: pointer;" onclick="previous()"><i
+            <p id="previous" style="visibility: hidden; cursor: pointer; " onclick="previous()"><i
                     class="arrow left"></i> უკან დაბრუნება </p>
 
             <div class="wrapper" id="main-products">
@@ -146,7 +151,8 @@ background-position: center center;
                     <div class="card">
                         <img src="/didg/img/main_dzravi.png" alt="Avatar" style="width:100%" data-product="engine"
                              data-cover="/didg/img/engine-cover.png"
-                             onclick="choose_product($(this).data('product'),$(this).data('cover'))">
+                             data-title="ძრავი"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>ძრავები</b></h4>
                         </div>
@@ -155,7 +161,8 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/PLC-main.png" alt="Avatar" style="width:100%" data-product="systems"
-                             onclick="choose_product($(this).data('product'))">
+                             data-title="სისტემები"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>PLC SCADA<br> SYSTEMS</b></h4>
                         </div>
@@ -164,7 +171,8 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/espa.png" alt="Avatar" style="width:100%" data-product="sempa"
-                             onclick="choose_product($(this).data('product'))">
+                             data-title="Sempa"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>Sempa</b></h4>
                         </div>
@@ -173,7 +181,8 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/wisqviliDaChiri.jpg" alt="Avatar" style="width:100%" data-product="mill"
-                             onclick="choose_product($(this).data('product'))">
+                             data-title="წისქვილის სათადარიგო ნაწილები"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>წისქვილის ქარხნის<br>სათადარიგო ნაწილები</b></h4>
                         </div>
@@ -183,7 +192,7 @@ background-position: center center;
                     <div class="card">
                         <img src="/didg/img/ozen-kompresor-main.jpg" alt="Avatar" style="width:100%"
                              data-product="ozen-compressor"
-                             onclick="choose_product($(this).data('product'))">
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>კომპრესორი </b></h4>
                         </div>
@@ -192,7 +201,8 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/trio-gen-main.png" alt="Avatar" style="width:100%" data-product="trio-gen"
-                             onclick="choose_product($(this).data('product'))">
+                             data-title="დიზელ გენერატორები"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>დიზელ<br>გენერატორები </b></h4>
                         </div>
@@ -201,7 +211,8 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/editor-main.png" alt="Avatar" style="width:100%" data-product="trio-gen"
-                             onclick="choose_product($(this).data('product'))">
+                             data-title="რედუქტორები"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>რედაქტორი და<br>სათადარიგო ნაწილები</b></h4>
                         </div>
@@ -210,8 +221,9 @@ background-position: center center;
                 <div class="block">
                     <div class="card">
                         <img src="/didg/img/engine-break-main.jfif" alt="Avatar" style="width:100%"
-                             data-product="trio-gen"
-                             onclick="choose_product($(this).data('product'))">
+                             data-product="engine-break"
+                             data-title="ძრავის მუხრუჭი"
+                             onclick="choose_product($(this).data('product'),$(this).data('cover'),$(this).data('title'))">
                         <div class="container">
                             <h4><b>ძრავის მუხრუჭი</b></h4>
                         </div>
@@ -825,21 +837,27 @@ Motor frame, cover, flange and terminal box up to 225 frame<br><br>
 <script>
     let previousTab = null;
 
-    function choose_product(el, image) {
+    function choose_product(el, image, title) {
         // console.log(el)
         const me = this;
         const mainProducts = document.getElementById("main-products");
         let subEl = document.getElementById(el);
+        if(previousTab){
+            let previousEl= document.getElementById(previousTab);
+            previousEl.style.visibility = "hidden"
+            previousEl.style.display = "none"
+        }
         mainProducts.style.visibility = 'hidden';
         mainProducts.style.display = "none"
         subEl.style.visibility = "visible"
         subEl.style.display = "grid"
+
         me.openNav();
         document.getElementById("previous").style.visibility = "visible"
         document.getElementById("mySidebar").style.height = "100%";
         previousTab = el;
         debugger;
-        document.getElementById("head-text").innerText = 'ძრავები'
+        document.getElementById("head-text").innerText = title
         if (image) {
             document.getElementById('cover-image').src = image;
             document.getElementById('cover-image').style.display = 'initial';

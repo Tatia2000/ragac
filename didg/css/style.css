@@ -17,7 +17,7 @@
 
 a {
     transition: 0.3s;
-    color: #212324;
+    color: #cacaca;
 }
 
 a:hover {
@@ -47,7 +47,7 @@ html, body {
 }
 
 body {
-    color: #555;
+    color: #cacaca;
     font-family: lato, sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -89,7 +89,7 @@ a:hover {
     font-size: 60px;
     letter-spacing: 2px;
     line-height: 0.8;
-    margin: 0;
+    margin: 77px 0px 0px 0px;
     padding: 0 20px 45px;
     position: relative;
     text-transform: capitalize;

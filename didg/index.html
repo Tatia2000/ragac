@@ -33,15 +33,27 @@
             column-count: 2;
         }
 
-        #div1 {
-            position: relative;
-            box-sizing: border-box;
-            margin: auto;
-            height: 400px;
-            width: 500px;
-            padding: 15px;
-            border: 2px solid #ee2a2a;
-            background-color: #020202;
+        .containerr {
+            display: grid;
+            align-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 400px;
+            height: 650px;
+        }
+
+        .aboutUsImg {
+            max-width: 50%;
+            max-height: 50%;
+            margin-right: 200px;
+            margin-top: -220px;
+        }
+
+        .text1 {
+            font-size: 18px;
+            width: 850px;
+            color: #070505;
+            margin-top: -284px;
+            margin-left: -248px
         }
 
     </style>
@@ -163,67 +175,69 @@
 </header>
 
 <hr style="height:2px;border-width:0;color:#98989f;background-color:#020202">
-<section class="about-area section-padding" id="about" style="background: rgb(255,255,255);
-background-color: #efeaea">
+<section class="about-area section-padding" id="about" style="background: rgb(2,1,1);
+background: linear-gradient(90deg, rgb(5,4,4) 0%, rgb(255,255,255) 40%, rgb(248,2,2) 100%); height: 800px">
     <div class="container wow fadeIn">
-        <div class="row">
+        <div class="row" style="margin-top: 79px;">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="area-title text-center">
+                <div class="area-title text-center" >
                     <h2>ჩვენს შესახებ</h2>
                 </div>
             </div>
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <div class="about-content">
-
-                    <em>ჩვენ ვართ საინჟინრო/დისტრიბუტორი კომპანია, რომელიც მრავალი წელია ამიერკავკასიის ინდუსტრიულ
-                        ბაზარზე სხვადახვა ტექნოლოგიების მომწოდებელია და
-                        ფლობს ავტომატიზაციის სფეროში განხორციელებული პროექტების დიდ პორტფოლიოს.
-                        ჩვენ ვემსახურებით 700- ზე მეტ კომპანიას, მათ შორის დიდ საკვანძო ინდუსტრიულ კომპანიებს.
-                        გვაქვს მსოფლიოში წამყვანი ქარხნების ექსკლუზიური წარმომადგელობა და მრავალწლიანი გამოცდილების
-                        საფუძველზე გთავაზობთ ხარისხიანი და სანდო პროდუქციის
-                        დიდ არჩევანს: ძრავები, რედუქტორები, კომპრესორები,გენერატორები,მართვის სისტემებისთვის საჭირო
-                        მოწყობილობები, მაღალტექნოლოგიური სენსორები და სხვა ინდუსტრიული დანადგარები.
-                    </em><br><br>
-                    <div> კომპანია საბა" გთავაზობთ პროექტირებას, სამონტაჟო მომსახურებასა და შემდგომ ტექნიკურ მხარდაჭერას
-                        ნებისმიერ ელექტრო საინსტალაციო სამუშაოებზე.
+                <div class="containerr">
+                    <div class="newspaper">
                     </div>
-
+                    <div class="about-content text1">
+                        <em>ჩვენ ვართ საინჟინრო/დისტრიბუტორი კომპანია, რომელიც მრავალი წელია ამიერკავკასიის ინდუსტრიულ
+                            ბაზარზე სხვადახვა ტექნოლოგიების მომწოდებელია და
+                            ფლობს ავტომატიზაციის სფეროში განხორციელებული პროექტების დიდ პორტფოლიოს.
+                            ჩვენ ვემსახურებით 700- ზე მეტ კომპანიას, მათ შორის დიდ საკვანძო ინდუსტრიულ კომპანიებს.
+                            გვაქვს მსოფლიოში წამყვანი ქარხნების ექსკლუზიური წარმომადგელობა და მრავალწლიანი გამოცდილების
+                            საფუძველზე გთავაზობთ ხარისხიანი და სანდო პროდუქციის
+                            დიდ არჩევანს: ძრავები, რედუქტორები, კომპრესორები,გენერატორები,მართვის სისტემებისთვის საჭირო
+                            მოწყობილობები, მაღალტექნოლოგიური სენსორები და სხვა ინდუსტრიული დანადგარები.
+                        </em><br><br>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="about-author-sign text-center">
-                    <img src="http://quomodosoft.com/html/dawat/demo/img/about/about_sign.png" alt="">
-                </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="color: #020101;font-size: 20px;margin-top: -386px"><br><br><br><br>
+                <marquee behavior="scroll" direction="left">კომპანია საბა" გთავაზობთ პროექტირებას, სამონტაჟო
+                    მომსახურებასა და შემდგომ ტექნიკურ მხარდაჭერას
+                    ნებისმიერ ელექტრო საინსტალაციო სამუშაოებზე.
+                </marquee>
+                <!-- <div style="color: black">
+                 </div>-->
             </div>
         </div>
     </div>
 </section>
-<section class="about-area section-padding" style="background: rgb(255,255,255);
-background-color: #cbbfb5">
+<section class="about-area section-padding" style="background: rgb(2,1,1);
+background: linear-gradient(90deg, rgb(203,197,197) 0%, rgb(248,252,252) 35%, rgb(248,252,252) 100%);">
     <div class="container wow fadeIn">
+        <div class="textForIcons ">
+            <strong><em>უპირატესობები:</em></strong> <br></div>
+        <br><br><br>
         <div class="row">
-            <div class="text-center textForIcons">
-                <strong><em>უპირატესობები:</em></strong> <br></div>
-            <br><br><br>
             <div class="newspaper">
                 <div class="right-about-content">
-                    <p style="color: #020202"><em>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong>
+                    <p style="color: #020101"><em>
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong>
                         გამოცდილი გუნდი <br>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong>
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong>
                         პროდუქციის ადგილზე ხელმისაწვდომობა <br>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong> ეფექტური
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong> ეფექტური
                         ტექნიკური გადაწყვეტილებები <br>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong> უმაღლესი
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong> უმაღლესი
                         ხარისხის პროდუქცია<br>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong> შემდგომი
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong> შემდგომი
                         ტექნიკური მხარდაჭერა<br>
-                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong>
+                        <strong> <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong>
                         ოფიციალური ტექნიკური გარანტია<br>
 
-                        <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong> ხელმისაწვდომი
+                        <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong> ხელმისაწვდომი
                         ფასები<br>
-                        <i class='fas fa-check-circle' style='font-size:48px;color:snow'></i></strong> ხელმისაწვდომი
+                        <i class='fas fa-check-circle' style='font-size:48px;color:red'></i></strong> ხელმისაწვდომი
                         ფასები<br></em>
                     </p>
                 </div>
@@ -277,20 +291,27 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt="ელექტრო სამონტაჟო სამუშაოები"></div>
                     <div class="food-menu-details">
-                        <h3>ელექტრო სამონტაჟო სამუშაოები<span class="menu-price"></span></h3>
+
+                        <h3 class="hover-text">ელექტრო სამონტაჟო სამუშაოები
+                            <span class="tooltip-text bottom">
+                                იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა,- ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
+
                         <p class="menu-speacification"><span> </span> <span> </span> <span> </span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
-
                     </div>
                 </div>
             </div>
             <div class="mix col-md-6 col-lg-6 col-sm-12 col-xs-12 single-menu breakfast">
                 <div class="single-menu-details">
-                    <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;" alt="ავტომატიზაცია
-"></div>
+                    <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"></div>
                     <div class="food-menu-details">
-                        <h3>ავტომატიზაცია
-                            <span class="menu-price"></span></h3>
+                        <h3 class="hover-text">ავტომატიზაცია
+                            <span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.</span></h3>
                         <p class="menu-speacification"><span></span> <span> </span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -302,7 +323,12 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt="ძალოვანი ფარების წარმოება"></div>
                     <div class="food-menu-details">
-                        <h3>ძალოვანი ფარების წარმოება<span class="menu-price"></span></h3>
+                        <h3 class="hover-text">ძალოვანი ფარების წარმოება <span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span></span> <span></span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -314,7 +340,13 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt="PLC პროგრამირება & სკადას სისტემაში ინტეგრაცია"></div>
                     <div class="food-menu-details">
-                        <h3>PLC პროგრამირება & სკადას სისტემაში ინტეგრაცია<span class="menu-price"> </span></h3>
+                        <h3 class="hover-text">PLC პროგრამირება & სკადას სისტემაში ინტეგრაცია<span
+                                class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span></span> <span></span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -326,7 +358,13 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt=" კომპრესორებისა და გენერატორების სერვისის სამუშაოები"></div>
                     <div class="food-menu-details">
-                        <h3> კომპრესორებისა და გენერატორების სერვისის სამუშაოები<span class="menu-price"></span></h3>
+                        <h3 class="hover-text"> კომპრესორებისა და გენერატორების სერვისის სამუშაოები<span
+                                class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span> </span> <span></span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -338,8 +376,13 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;" alt="ინდუსტრიული დანადგარების ინსტალაცია & ექსპლუატაციაში გაშვება
 "></div>
                     <div class="food-menu-details">
-                        <h3>ინდუსტრიული დანადგარების ინსტალაცია & ექსპლუატაციაში გაშვება
-                            <span class="menu-price"></span></h3>
+                        <h3 class="hover-text">ინდუსტრიული დანადგარების ინსტალაცია & ექსპლუატაციაში გაშვება
+                            <span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span> </span> <span> </span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -351,7 +394,12 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt=" საქლორატორო სადგურების მონტაჟი"></div>
                     <div class="food-menu-details">
-                        <h3> საქლორატორო სადგურების მონტაჟი<span class="menu-price"> </span></h3>
+                        <h3 class="hover-text"> საქლორატორო სადგურების მონტაჟი<span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span> </span> <span> </span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -363,7 +411,12 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt=" წყლის სისტემების მონტაჟი & პროექტირება"></div>
                     <div class="food-menu-details">
-                        <h3> წყლის სისტემების მონტაჟი & პროექტირება<span class="menu-price"></span></h3>
+                        <h3 class="hover-text"> წყლის სისტემების მონტაჟი & პროექტირება<span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ე
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span> </span> <span> </span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -375,7 +428,10 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt="ამწე მექანიზმების მონტაჟი & სერვისი"></div>
                     <div class="food-menu-details">
-                        <h3>ამწე მექანიზმების მონტაჟი & სერვისი<span class="menu-price"></span></h3>
+                        <h3 class="hover-text">ამწე მექანიზმების მონტაჟი & სერვისი<span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,.</span></h3>
                         <p class="menu-speacification"><span></span> <span></span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
 
@@ -387,7 +443,12 @@ background-color: #cbbfb5">
                     <div class="food-menu-img"><img src="img/cecxlgamdzle.png" style="height: 100px;"
                                                     alt=" ელექტრო ძრავების აღდგენის სერვისი"></div>
                     <div class="food-menu-details">
-                        <h3> ელექტრო ძრავების აღდგენის სერვისი<span class="menu-price"></span></h3>
+                        <h3 class="hover-text"> ელექტრო ძრავების აღდგენის სერვისი<span class="tooltip-text bottom">იყო და არა იყო რა, ღვთის უკეთესი რა იქნებოდა, იყო ერთი ზარმაცი და მუქთამჭამელი კაცი. ცისმარე დღე
+    კერასთან იჯდა, ხელში ჩხირი ეჭირა და ნაცარს ქექავდა. სწორედ ამიტომ ხალხმა ნაცარქექია შეარქვა.
+ნაცარქექიას კარგი მეოჯახე ძმები ჰყავდა.
+ კაცო, სულ რომ ნაცარს უზიხარ, ან ჭამა არ გინდა, ან სმა, - ეუბნებოდნენ ყოველდღე, - ადექი, გაისარჯე,
+    იქეთ მიდექ, აქეთ მოდექ და ოჯახში რამე შემოიტანე, თორემ იცოდე, ჩვენ შენი რჩენის თავი აღარა გვაქვს და სახლიდან გაგაგდებთო.</span>
+                        </h3>
                         <p class="menu-speacification"><span> </span> <span> </span> <span></span></p>
                         <p class="menu-speacification"><span> </span> <span> </span></p>
                     </div>
@@ -456,7 +517,7 @@ background: linear-gradient(90deg, rgb(199,199,204) 0%, rgb(255,255,255) 35%, rg
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                <div class="area-title text-center"style="padding-top: 15%">
+                <div class="area-title text-center" style="padding-top: 15%">
                     <h2>პარტნიორი კომპანიები </h2>
                 </div>
             </div>

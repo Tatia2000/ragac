@@ -624,6 +624,7 @@ a.search-form-trigger::before {
 
 .about-content {
     color: #4a4d4f;
+    text-align: justify;
 }
 
 a.read-more {
@@ -799,8 +800,8 @@ a.read-more {
 }
 
 .food-menu-details h3 span {
-    color: #ca3d26;
-    font-size: 11px;
+    color: #faf8f7;
+    font-size: 13px;
     float: right;
 }
 
@@ -2428,6 +2429,65 @@ wr
 }
 
 .textForIcons {
-    font-size: 18px;
+    font-size: 23px;
     color: #0b0b0b;
+    margin-left: 150px ;
+}
+.tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    /*font-size: 100px;*/
+    background-color: #020202;
+    border-radius: 7px;
+    /*width: 180%;*/
+    height: auto;
+    padding: 30px;
+}
+
+.hover-text:hover .tooltip-text {
+    visibility: visible;
+}
+
+/*#top {
+    top: -40px;
+    left: -50%;
+}
+
+#bottom {
+    top: 25px;
+    left: -50%;
+}
+
+#left {
+    top: -8px;
+    right: 120%;
+}*/
+
+.bottom {
+    top: 25px;
+    left: -50%;
+}
+
+.hover-text {
+    position: relative;
+    display: inline-block;
+    /*margin: 1px;*/
+    font-family: Avenir;
+    /*text-align: center;*/
+}
+.Slider-forComps {
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    perspective: 1300px;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5%;
 }
